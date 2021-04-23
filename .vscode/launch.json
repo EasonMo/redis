@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "redis 启动",
+            // "type": "cppdbg",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/redis-server",
+            "args": ["redis.conf"],
+            // "stopAtEntry": false,
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "make redis",
+            "MIMode": "lldb"
+        }
+    ]
+}
